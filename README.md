@@ -103,3 +103,4 @@ Environment variable injection
 
 
 **Note: The GKE Cluster and the webpage(https://34.60.206.146/) is available to access and check till Monday (10/3.2024) EOD**
+A separate improvements.txt is included for future improvements.
