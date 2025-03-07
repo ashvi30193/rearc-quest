@@ -1,0 +1,20 @@
+Given More Time, I Would Improve...
+While the current solution effectively deploys the Node.js application on Google Kubernetes Engine (GKE) using Terraform, Docker, and TLS, there are several areas that could be improved with more time:
+
+1. Automating Certificate Management
+Currently, the TLS certificates are manually generated and stored as a Kubernetes secret.
+Improvement: Integrate Let's Encrypt with Cert-Manager for automatic certificate provisioning and renewal.
+2. CI/CD Integration
+The Docker image build and push process is currently manual.
+Improvement: Implement a CI/CD pipeline using GitHub Actions or GitLab CI/CD to automatically build, push, and deploy changes.
+3. Implementing Role-Based Access Control (RBAC)
+The cluster does not have fine-grained access control for different users.
+Improvement: Define RBAC policies to ensure least privilege access for services and users.
+4. Graceful Shutdown and Health Checks
+The application does not handle graceful shutdowns or health checks effectively.
+Improvement:
+Implement liveness and readiness probes in Kubernetes.
+Handle SIGTERM signals in Node.js to allow for proper cleanup before termination.
+5. Multi-Cloud or Multi-Region Deployment
+Currently, the application is deployed only in GCP (single region).
+Improvement: Extend Terraform to support multi-region or even multi-cloud (AWS, Azure) deployments for high availability.
