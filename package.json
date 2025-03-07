@@ -1,0 +1,15 @@
+{
+  "name": "quest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/00.js",
+  "scripts": {
+    "start": "node src/00.js"
+  },
+  "dependencies": {
+    "express": "~4.16.3"
+  },
+  "keywords": [],
+  "author": "Rearc",
+  "license": "ISC"
+}
