@@ -3,7 +3,6 @@ const app = express();
 const fs = require('fs');
 const https = require('https');
 
-// Load the manually downloaded CA certificate
 //const caCert = fs.readFileSync("rearc.crt");
 const port = 443;
 const key = fs.readFileSync('/etc/ssl/private/tls.key');
